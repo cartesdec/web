@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebInt Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌐 WebInt Application</h1>
+            <p>A modern web application with Python backend</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>API Status</h2>
+                <button onclick="checkHealth()">Check Health</button>
+                <div id="status" class="result"></div>
+            </section>
+
+            <section class="card">
+                <h2>Hello Endpoint</h2>
+                <input type="text" id="nameInput" placeholder="Enter your name" value="World">
+                <button onclick="sayHello()">Say Hello</button>
+                <div id="hello-result" class="result"></div>
+            </section>
+
+            <section class="card">
+                <h2>Echo Service</h2>
+                <textarea id="dataInput" placeholder="Enter data to echo..." rows="4"></textarea>
+                <button onclick="echoData()">Send Data</button>
+                <div id="echo-result" class="result"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 WebInt Application. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
